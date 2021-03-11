@@ -194,7 +194,7 @@ echo "Deploy Azure API for FHIR and Service Client..."
 			pmfhirurl=$fsaudience
 			pmenv=${pmenv/~guid~/$pmuuid}
 			pmenv=${pmenv/~envname~/$fsname}
-			pmenv=${pmenv/~tenentid~/$fstenant}
+			pmenv=${pmenv/~tenentid~/$fstenantid}
 			pmenv=${pmenv/~clientid~/$fsclientid}
 			pmenv=${pmenv/~clientsecret~/$fssecret}
 			pmenv=${pmenv/~fhirurl~/$pmfhirurl}
