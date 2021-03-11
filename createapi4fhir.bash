@@ -158,6 +158,7 @@ if [[ -z "$kvexists" ]]; then
 fi
 #Check FS exists
 echo "Checking for exiting FHIR Server "$fsname"..."
+stepresult=$(az config set extension.use_dynamic_install=yes_without_prompt)
 fsexists=$(az healthcareapis service list --query "[?name == '$fsname'].name" --out tsv)
 if [[ -n "$fsexists" ]]; then
 	echo "An API for FHIR Server Named "$fsname" already exists in this subscription...Retry deployment with another name"
