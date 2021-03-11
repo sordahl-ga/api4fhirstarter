@@ -9,7 +9,8 @@ Deploy an Azure API for FHIR Instance and Register a Service Client for Access
 1. [Open Azure Cloud Shell](https://shell.azure.com) you can also access this from [Azure Portal](https://portal.azure.com)
 2. Select Bash Shell for the environment 
 3. Clone this repo ```git clone https://github.com/sordahl-ga/api4fhirstarter```
-4. Follow prompts
+4. Execute ```createapi4fhir.bash -p```
+5. Follow prompts
 
 # Contributing
 
