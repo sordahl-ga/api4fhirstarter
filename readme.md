@@ -8,7 +8,8 @@ Deploy an Azure API for FHIR Instance and Register a Service Client for Access
 # Prerequsites
 1. The following resources providers must be registered in your subscription and you must have the ability to create/update them:
    + ResourceGroup, KeyVault, Azure API 4 FHIR
-2. You must have the rights assigned to create application registrations/service principals and assign FHIR Roles in the destination active directory tenant. 
+2. You must have the rights assigned to create application registrations/service principals and assign FHIR Roles in the destination active directory tenant.
+3. You must deploy to a region that supports Azure API for FHIR.  You can use the [product by region page](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=azure-api-for-fhir) to verify your destination region. 
 
 # Instructions
 1. [Open Azure Cloud Shell](https://shell.azure.com) you can also access this from [Azure Portal](https://portal.azure.com)
