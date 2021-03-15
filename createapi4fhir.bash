@@ -164,7 +164,6 @@ if [[ -n "$fsexists" ]]; then
 	echo "An API for FHIR Server Named "$fsname" already exists in this subscription...Retry deployment with another name"
 	exit 1
 fi
-set +e
 #Start deployment
 echo "Deploy Azure API for FHIR and Service Client..."
 (
@@ -210,7 +209,7 @@ echo "Deploy Azure API for FHIR and Service Client..."
 		echo " "
 		if [ -n "$genpostman" ]; then
 			echo "For your convenience a Postman environment "$fsname".postman_environment.json has been generated"
-			echo "It can imported along with the FHIR CALLS-Sample.postman_collection.json into postman to test your proxy access"
+			echo "It can be imported along with the FHIR-CALLS-Sample.postman-collection.json into postman to test access to your FHIR Server"
 			echo "For Postman Importing help please reference the following URL:"
 			echo "https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data"
 		fi
