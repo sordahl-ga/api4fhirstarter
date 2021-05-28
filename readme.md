@@ -19,7 +19,7 @@ Deploy an Azure API for FHIR Instance and Register a Service Client for Access
 1. Execute ```createapi4fhir.bash -p```
     1. Note -p creates a Postman Envirnment file which you can download
 1. Follow prompts for the following
-    1. Validate Tenant ID 
+    1. Validate Subscription ID 
     1. Create Resource Group 
     1. Choose Resource Group location 
     1. Enter new Key Vault Name 
