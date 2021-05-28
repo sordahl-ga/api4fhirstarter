@@ -15,8 +15,15 @@ Deploy an Azure API for FHIR Instance and Register a Service Client for Access
 1. [Open Azure Cloud Shell](https://shell.azure.com) you can also access this from [Azure Portal](https://portal.azure.com)
 2. Select Bash Shell for the environment 
 3. Clone this repo ```git clone https://github.com/sordahl-ga/api4fhirstarter```
-4. Execute ```createapi4fhir.bash -p```
-5. Follow prompts.
+4. Make the bash script executable ```chmod +x ./createapi4fhir.bash```
+1. Execute ```createapi4fhir.bash -p```
+    1. Note -p creates a Postman Envirnment file which you can download
+1. Follow prompts for the following
+    1. Validate Tenant ID 
+    1. Create Resource Group 
+    1. Choose Resource Group location 
+    1. Enter new Key Vault Name 
+    1. Enter name for API for FHIR Service 
 
 # Using Postman to Connect to FHIR Server
 1. [Download and Install Postman API App](https://www.postman.com/downloads/)
@@ -52,5 +59,5 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-FHIR® is the registered trademark of HL7 and is used with the permission of HL7.</br>
-Postman API App ©Postman Inc.
+FHIRï¿½ is the registered trademark of HL7 and is used with the permission of HL7.</br>
+Postman API App ï¿½Postman Inc.
