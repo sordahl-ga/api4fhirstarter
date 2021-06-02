@@ -184,6 +184,7 @@ echo "Deploy Azure API for FHIR and Service Client..."
 		stepresult=$(az keyvault secret set --vault-name $kvname --name "FS-CLIENT-ID" --value $fsclientid)
 		stepresult=$(az keyvault secret set --vault-name $kvname --name "FS-SECRET" --value $fssecret)
 		stepresult=$(az keyvault secret set --vault-name $kvname --name "FS-RESOURCE" --value $fsaudience)
+		stepresult=$(az keyvault secret set --vault-name $kvname --name "FS-URL" --value $fsaudience)
 		echo "Placing Service Client in FHIR Data Contributor Role..."
 		stepresult=$(az role assignment create --role "FHIR Data Contributor" --assignee-object-id $fsoid --scope $fsresourceid) 
 		if [ -n "$genpostman" ]; then
